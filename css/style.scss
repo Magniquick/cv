@@ -1,0 +1,327 @@
+*{
+    font-family: "work sans";
+    color:#ffffff;
+}
+
+body{
+    margin: initial;
+    height: 100vh;
+    width: 100vw;
+
+    background-color:#151515;
+    background-image: url('../static/back.gif');
+    background-size:50vh 50vh;
+    background-position: center 0vh;
+    background-repeat: no-repeat;
+    
+    color:#ffffff;
+    font-weight:lighter;
+}
+
+footer {
+color: #5d5d5d;
+text-align:center; 
+}
+
+a, a:visited{ 
+text-decoration: none;
+color:#9a9a9a; 
+transition: all .1s ease-in-out;
+}
+
+a:hover, a:active {
+color:#e4e4e4; 
+}
+
+.link,.sanitycheck{
+padding: 0vh 1vw 0vh 1vw;
+}
+
+hr{
+    position: relative;
+    border: none;
+    height: 1px;
+    width: 50%;
+    background: #9a9a9a;
+
+    margin-top:15px;
+    margin-bottom:15px;
+    margin-left:15%;
+}
+
+li{
+    margin-bottom: 4px; 
+}
+
+/*      TEXT PRESETS         */
+
+.head1{
+color:#ffffff;
+font-size: 2.3vh;
+font-weight:lighter;
+}
+
+.head2{
+    color:#ffffff;   
+    font-size: 2vh; 
+    font-weight:lighter;
+    }
+
+.head3{
+        color:#ffffff;
+        font-size: 1.7vh;    
+        font-weight:lighter;
+    }
+
+.head4{
+    font-weight:lighter;
+    font-size: 1.5vh;
+    }
+
+.small{
+    font-size: 1.7vh;
+}
+
+.medium{
+    font-size: 2vh;
+}
+.large{
+    font-size: 2.3vh;
+}
+
+
+.lighter{
+    font-weight: lighter;
+}
+.normal{
+    font-weight: normal;
+}
+.bolder{
+    font-weight: normal;
+}
+
+
+/*      positional presets        */
+
+.pad-topxs{
+    padding-top:2vh;
+
+}
+
+.pad-tops{
+    padding-top:5vh;
+
+}
+
+
+.pad-topm{
+    padding-top:10vh;
+
+}
+
+.pad-topl{
+    padding-top:18vh;
+
+}
+.pad-topxl{
+    padding-top:25vh;
+
+}
+
+
+.pad-bots{
+    padding-bottom: 0.9vh;
+}
+.pad-botm{
+    padding-bottom: 10vh;
+}
+.pad-botl{
+    padding-bottom: 18vh;
+}
+
+
+
+.left{
+    text-align:left;
+}
+
+.center{
+    
+    text-align:center;
+}
+
+.right{
+    text-align:right;
+}
+
+
+.centerleft{
+    display: inline-block; 
+    text-align: left;
+}
+
+.centerilb{    
+    display: inline-block; 
+    text-align:center;
+}
+
+
+
+/*=======   object specific    ========*/
+
+.navbar{
+font-family: "work sans";
+font-weight:lighter;
+font-size: 1.7vh;
+text-align:center;
+padding: 15.7vh 0vw 0vh 0vw;
+}
+
+.homebutton{
+    position:absolute;
+    width: 100px;
+    height: 100px;
+
+    top: 25vh;
+    left:50%;
+    margin-top:-50px;
+    margin-left:-50px;
+
+    background: #ffffff;
+    opacity: 0.5%;   
+    border-radius: 50%;
+}
+
+.sanitycheck:hover,.sanitycheck:active{
+color:#dc2f02;
+}
+
+
+.legal,.legal:visited{
+    color:#5d5d5d;
+    }
+    
+.legal:hover, .legal:active {
+    color:#9ef01a; 
+}
+
+
+.box {
+	padding: 5px;
+	max-width: 80vh;
+	width: 95%;
+	margin: 20px auto;
+}
+
+
+.columns {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 5px 0;
+    align-content: center;
+    
+    
+}
+
+.column {
+	flex: 1;
+	border: 1px solid gray;
+	margin: 2px;
+	padding: 10px;
+	&:first-child { margin-left: 0; }
+	&:last-child { margin-right: 0; }
+    text-align: center;
+	
+}
+
+
+.socials{
+    display:flex;
+    height:auto;
+    width:auto;
+    margin-bottom: 1.6vh;
+}
+
+.socials-text{
+    font-size: 2.2vh;
+    margin-top:0px;
+    margin-left: 3px;
+}
+
+
+/*      selection color       */
+
+::-moz-selection { /* Code for Firefox */
+    color: #151515;
+    background: #ffffff;
+  }
+  
+  ::selection {
+    color: #151515;
+    background: #ffffff;
+  }
+
+
+
+
+
+
+/*      align boxes vertically if width exceedes   */
+
+
+
+@media screen and (max-width: 40vw) {
+    .columns .column {
+          margin-bottom: 5px;
+      flex-basis: 40%;
+          &:nth-last-child(2) {
+              margin-right: 0;
+          }
+          &:last-child {
+              flex-basis: 100%;
+              margin: 0;
+          }
+      }
+  }
+  
+  @media screen and (max-width: 40vw) {
+      .columns .column {
+          flex-basis: 100%;
+          margin: 0 0 5px 0;
+      }
+  }
+
+
+
+
+
+
+
+/*===============================*/
+
+
+
+.disable-select {
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+
+
+@font-face {    
+font-family: 'archiaregular';    
+src: url('../static/fonts/archia-regular-webfont.eot');    
+src: url('../static/fonts/archia-regular-webfont.eot?#iefix') format('embedded-opentype'),
+   url('../static/fonts/archia-regular-webfont.woff2') format('woff2'),    
+   url('../static/fonts/archia-regular-webfont.woff') format('woff'),    
+   url('../static/fonts/archia-regular-webfont.ttf') format('truetype');    
+font-weight: normal;    
+font-style: normal;    
+
+}
+
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:400,300,700|Open+Sans:400italic,300italic);     
